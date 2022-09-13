@@ -82,10 +82,7 @@ public class SampleServiceImpl implements SampleService{
 				sampleDAO.insertFile(tempMap);
 			} else {
 				sampleDAO.updateFile(tempMap);
-			}
-			
-			
-			
+			}	
 		}
 	}
 
