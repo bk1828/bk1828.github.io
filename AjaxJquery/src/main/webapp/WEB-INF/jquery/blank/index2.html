@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>css 스타일 변경하기</title>
+<link rel="stylesheet" href="./css/normalize.css">
+<link rel="stylesheet" href="./css/main.css">
+
+<!-- index.html 처럼 아래에 script가 아닌 위에서 정의하는 방법 -->
+<script src="https://code.jquery.com/jquery-3.6.1.min.js"
+	integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+	crossorigin="anonymous"></script>
+<script>
+	$(document).ready(function(){
+		$('h1').css({'color':'red'});
+	});
+	
+	/* 위와 같은 코드임
+	$(function(){
+		$('h1').css({'color':'red'});
+	});	
+	*/
+</script>
+
+</head>
+<body>
+
+<header class="page-header" role="banner">
+    <h1>Creative jQuery Sample</h1>
+</header>
+
+<div class="page-main" role="main">
+    <div id="typo">
+        <div class="inner">Creative jQuery</div>
+    </div>
+</div>
+
+
+</body>
+</html>
