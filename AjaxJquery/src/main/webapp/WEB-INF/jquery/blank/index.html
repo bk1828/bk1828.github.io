@@ -7,6 +7,13 @@
 <link rel="stylesheet" href="./css/normalize.css">
 <link rel="stylesheet" href="./css/main.css">
 
+<script src="https://code.jquery.com/jquery-3.6.1.min.js"
+	integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+	crossorigin="anonymous"></script>
+
+<!-- main.js 파일을 따로 만들어 script내 jquery를 끌어쓰는 방법 -->	
+<script src="js/main.js"></script>
+
 </head>
 <body>
 
@@ -20,15 +27,6 @@
     </div>
 </div>
 
-<!-- script는 가능한 body의 아래쪽에 있는게 좋음 -->
-<!-- 단, js 파일을 먼저 불러오고 사용할 것 -->
-<script src="https://code.jquery.com/jquery-3.6.1.min.js"
-	integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
-	crossorigin="anonymous"></script>
-<script>
-	//document.getElementsByTagName('h1')[0].style.color='red';
-	$('h1').css({'color':'red'});	
-</script>
 
 </body>
 </html>
